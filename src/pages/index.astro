@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import sibundoyImage from '../assets/sibundoy.png';
 ---
 
 <Layout title="The Living Bridge Foundation">
@@ -79,8 +81,8 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <div class="hero-image-wrap">
-        <img
-          src="https://github.com/user-attachments/assets/5579033d-b90b-4bd1-bd27-7c54de56c3e2"
+        <Image
+          src={sibundoyImage}
           alt="Aerial view of the Sibundoy Valley, Colombia, with green mountains and clouds"
           class="hero-img"
           loading="eager"
@@ -336,7 +338,7 @@ import Layout from '../layouts/Layout.astro';
     </div>
 
     <div class="footer-bottom container">
-      <p class="footer-copy">© 2024 The Living Bridge Foundation</p>
+      <p class="footer-copy">© 2026 The Living Bridge Foundation</p>
       <nav class="footer-nav" aria-label="Footer navigation">
         <a href="/contact">Contact</a>
         <a href="/privacy">Privacy Policy</a>
