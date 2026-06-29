@@ -1,0 +1,984 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import sibundoyImage from '../assets/sibundoy.png';
+---
+
+<Layout title="The Living Bridge Foundation">
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="/" class="nav-logo" aria-label="The Living Bridge Foundation">
+        <!-- Bridge icon -->
+        <svg class="nav-logo-icon" viewBox="0 0 48 36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <!-- deck -->
+          <line x1="2" y1="28" x2="46" y2="28" />
+          <!-- left tower -->
+          <line x1="12" y1="28" x2="12" y2="8" />
+          <!-- right tower -->
+          <line x1="36" y1="28" x2="36" y2="8" />
+          <!-- tower caps -->
+          <line x1="9" y1="8" x2="15" y2="8" />
+          <line x1="33" y1="8" x2="39" y2="8" />
+          <!-- left cable from top-left to tower apex -->
+          <path d="M2 28 Q12 14 12 8" />
+          <!-- right cable -->
+          <path d="M46 28 Q36 14 36 8" />
+          <!-- center catenary cables -->
+          <path d="M12 8 Q24 18 36 8" />
+          <!-- vertical hangers -->
+          <line x1="18" y1="27" x2="17" y2="14" />
+          <line x1="24" y1="28" x2="24" y2="13" />
+          <line x1="30" y1="27" x2="31" y2="14" />
+        </svg>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">THE LIVING BRIDGE</span>
+          <span class="nav-logo-sub">FOUNDATION</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/mission">Our Mission</a></li>
+        <li><a href="/why">Why It Matters</a></li>
+        <li><a href="/involved">Get Involved</a></li>
+        <li><a href="/updates">Updates</a></li>
+      </ul>
+
+      <a href="/join" class="btn btn-dark nav-cta">Become a Founding Member</a>
+
+      <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-heading">
+          Building a bridge<br />
+          between Europe and<br />
+          the <span class="accent">Kamëntsá</span> people
+        </h1>
+        <div class="divider">
+          <span class="divider-diamond"></span>
+        </div>
+        <p class="hero-body">
+          We are creating a European NGO to support
+          the living traditions, territorial rights, and
+          self-determined projects of the Kamëntsá
+          people in the <a href="/valley" class="inline-link">Sibundoy Valley</a>, Colombia.
+        </p>
+        <a href="/mission" class="btn btn-dark hero-btn">Our Mission</a>
+      </div>
+
+      <div class="hero-image-wrap">
+        <Image
+          src={sibundoyImage}
+          alt="Aerial view of the Sibundoy Valley, Colombia, with green mountains and clouds"
+          class="hero-img"
+          loading="eager"
+        />
+        <div class="hero-img-overlay" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PILLARS / VALUES
+    ============================================================ -->
+    <section class="pillars">
+      <div class="container pillars-grid">
+
+        <div class="pillar">
+          <div class="pillar-icon-wrap" aria-hidden="true">
+            <!-- Sprout / Connect icon -->
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="24" y1="40" x2="24" y2="22" />
+              <path d="M24 32 C16 27 13 17 19 10 C22 17 24 24 24 32Z" />
+              <path d="M24 27 C32 22 35 12 29 5 C26 12 24 19 24 27Z" />
+            </svg>
+          </div>
+          <h3 class="pillar-title">We Connect</h3>
+          <p class="pillar-body">We build respectful and lasting partnerships between Europe and Indigenous communities.</p>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-icon-wrap" aria-hidden="true">
+            <!-- Heart / Support icon -->
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M24 36 C24 36 9 26 9 16.5 A7.5 7.5 0 0 1 24 14 A7.5 7.5 0 0 1 39 16.5 C39 26 24 36 24 36Z" />
+              <path d="M18 40 L24 36 L30 40" />
+            </svg>
+          </div>
+          <h3 class="pillar-title">We Support</h3>
+          <p class="pillar-body">We support Indigenous-led initiatives that strengthen culture, territory, education, health, and environmental protection.</p>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-icon-wrap" aria-hidden="true">
+            <!-- People / Empower icon -->
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <!-- center person -->
+              <circle cx="24" cy="14" r="4.5" />
+              <path d="M16 38 C16 30 32 30 32 38" />
+              <line x1="24" y1="18.5" x2="24" y2="30" />
+              <!-- left person -->
+              <circle cx="11" cy="17" r="3.5" />
+              <path d="M5 38 C5 32 17 32 17 38" />
+              <!-- right person -->
+              <circle cx="37" cy="17" r="3.5" />
+              <path d="M31 38 C31 32 43 32 43 38" />
+            </svg>
+          </div>
+          <h3 class="pillar-title">We Empower</h3>
+          <p class="pillar-body">We promote self-determination and create opportunities for future generations.</p>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-icon-wrap" aria-hidden="true">
+            <!-- Globe / Steward icon -->
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="24" r="16" />
+              <ellipse cx="24" cy="24" rx="7" ry="16" />
+              <line x1="8" y1="24" x2="40" y2="24" />
+              <path d="M10 16 Q24 20 38 16" />
+              <path d="M10 32 Q24 28 38 32" />
+            </svg>
+          </div>
+          <h3 class="pillar-title">We Transparently Steward</h3>
+          <p class="pillar-body">We ensure ethical governance, transparency, and accountable use of resources.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WHY IT MATTERS
+    ============================================================ -->
+    <section class="why">
+      <div class="why-image-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=700&h=700&q=80"
+          alt="Members of the Kamëntsá community in the Sibundoy Valley"
+          class="why-img"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="why-content">
+        <p class="section-label">Why It Matters</p>
+        <h2 class="why-heading">
+          A remarkable culture.<br />
+          Still largely <span class="accent">unheard.</span>
+        </h2>
+        <div class="divider">
+          <span class="divider-diamond"></span>
+        </div>
+        <div class="why-body">
+          <p>The Kamëntsá people of the Sibundoy Valley carry one of the richest living traditions in the Andes and Amazon.</p>
+          <p>Yet outside Colombia, their voice remains largely unheard.</p>
+          <p>This is not because their wisdom is less valuable.<br />
+          It is because they have had fewer bridges connecting them to the world.</p>
+          <p class="bold-statement">We believe that can change.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FOUNDING CTA
+    ============================================================ -->
+    <section class="founding">
+      <div class="founding-side founding-side--left">
+        <!-- Plant in hands icon -->
+        <svg class="founding-side-icon" viewBox="0 0 72 72" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <!-- plant -->
+          <line x1="36" y1="38" x2="36" y2="24" />
+          <path d="M36 32 C29 27 26 18 31 12 C34 18 36 25 36 32Z" />
+          <path d="M36 28 C43 23 46 14 41 8 C38 14 36 21 36 28Z" />
+          <!-- left hand -->
+          <path d="M18 42 C18 38 22 36 26 37 L36 38 L46 37 C50 36 54 38 54 42 L54 52 C54 56 50 60 46 60 L26 60 C22 60 18 56 18 52 Z" />
+        </svg>
+        <p class="founding-side-text">Be part of something meaningful.</p>
+      </div>
+
+      <div class="founding-main">
+        <p class="section-label">The Next Step</p>
+        <h2 class="founding-heading">Help us found this bridge</h2>
+        <div class="divider centered">
+          <span class="divider-diamond"></span>
+        </div>
+        <p class="founding-body">
+          We are currently establishing the legal foundation of the NGO in Europe.
+          We are inviting a small group of committed individuals to become founding members
+          and help shape the vision, structure, and impact from the very beginning.
+        </p>
+        <a href="/join" class="btn btn-dark founding-btn">Become a Founding Member</a>
+        <a href="/founding-process" class="founding-link">Learn more about the founding process →</a>
+      </div>
+
+      <div class="founding-side founding-side--right">
+        <!-- Bridge icon -->
+        <svg class="founding-side-icon" viewBox="0 0 72 60" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="4" y1="46" x2="68" y2="46" />
+          <line x1="20" y1="46" x2="20" y2="18" />
+          <line x1="52" y1="46" x2="52" y2="18" />
+          <line x1="16" y1="18" x2="24" y2="18" />
+          <line x1="48" y1="18" x2="56" y2="18" />
+          <path d="M4 46 Q20 28 20 18" />
+          <path d="M68 46 Q52 28 52 18" />
+          <path d="M20 18 Q36 32 52 18" />
+          <line x1="28" y1="45" x2="27" y2="27" />
+          <line x1="36" y1="46" x2="36" y2="25" />
+          <line x1="44" y1="45" x2="45" y2="27" />
+        </svg>
+        <p class="founding-side-text">Help build a bridge that will last for generations.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="footer-inner container">
+
+      <div class="footer-values">
+        <p class="footer-label">What We Stand For</p>
+        <ul class="footer-values-list" role="list">
+
+          <li class="footer-value-item">
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 30 C20 30 8 22 8 14 A6 6 0 0 1 20 12 A6 6 0 0 1 32 14 C32 22 20 30 20 30Z" />
+            </svg>
+            <span>Respect</span>
+          </li>
+
+          <li class="footer-value-item">
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="14" cy="13" r="5" />
+              <circle cx="26" cy="13" r="5" />
+              <path d="M5 34 C5 27 23 27 23 34" />
+              <path d="M17 34 C17 27 35 27 35 34" />
+            </svg>
+            <span>Reciprocity</span>
+          </li>
+
+          <li class="footer-value-item">
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="20" y1="6" x2="20" y2="34" />
+              <path d="M12 10 C12 10 10 22 20 26 C30 22 28 10 28 10 Z" />
+            </svg>
+            <span>Integrity</span>
+          </li>
+
+          <li class="footer-value-item">
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polygon points="20,5 23,14 32,14 25,20 28,29 20,23 12,29 15,20 8,14 17,14" />
+            </svg>
+            <span>Cultural Preservation</span>
+          </li>
+
+          <li class="footer-value-item">
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="20" cy="20" r="13" />
+              <ellipse cx="20" cy="20" rx="6" ry="13" />
+              <line x1="7" y1="20" x2="33" y2="20" />
+              <path d="M9 14 Q20 17 31 14" />
+              <path d="M9 26 Q20 23 31 26" />
+            </svg>
+            <span>Care for the Earth</span>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="footer-location">
+        <p class="footer-label">Where We Begin</p>
+        <p class="footer-location-text">
+          Our first focus is the Sibundoy Valley,
+          working alongside the Kamëntsá people
+          and the Muchavisoy family's vision
+          through Vinyiabtumayokan.
+        </p>
+        <a href="/valley" class="footer-location-link">Learn more about the valley →</a>
+      </div>
+
+      <!-- Decorative botanical leaf -->
+      <div class="footer-leaf" aria-hidden="true">
+        <svg viewBox="0 0 120 160" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <!-- main leaf body -->
+          <path d="M60 150 C60 150 10 100 10 55 C10 20 40 5 60 10 C80 5 110 20 110 55 C110 100 60 150 60 150Z" />
+          <!-- center vein -->
+          <line x1="60" y1="150" x2="60" y2="15" />
+          <!-- lateral veins left -->
+          <path d="M60 55 C50 50 35 48 25 42" />
+          <path d="M60 72 C48 68 34 68 22 62" />
+          <path d="M60 90 C50 88 38 90 28 86" />
+          <path d="M60 108 C52 107 43 110 36 108" />
+          <!-- lateral veins right -->
+          <path d="M60 55 C70 50 85 48 95 42" />
+          <path d="M60 72 C72 68 86 68 98 62" />
+          <path d="M60 90 C70 88 82 90 92 86" />
+          <path d="M60 108 C68 107 77 110 84 108" />
+          <!-- smaller leaf -->
+          <path d="M60 30 C60 30 44 18 40 10 C48 10 58 18 60 30Z" />
+          <path d="M60 30 C60 30 76 18 80 10 C72 10 62 18 60 30Z" />
+        </svg>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom container">
+      <p class="footer-copy">© 2026 The Living Bridge Foundation</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="/contact">Contact</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+</Layout>
+
+<style>
+  /* ==========================================================
+     SHARED UTILITIES
+  ========================================================== */
+  .container {
+    max-width: var(--max-w);
+    margin-inline: auto;
+    padding-inline: var(--px);
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.75rem;
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-align: center;
+    transition: opacity 0.2s;
+  }
+
+  .btn:hover {
+    opacity: 0.85;
+  }
+
+  .btn-dark {
+    background: var(--dark);
+    color: #fff;
+  }
+
+  .section-label {
+    font-family: var(--font-sans);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 0.75rem;
+  }
+
+  .accent {
+    color: var(--terracotta);
+  }
+
+  .inline-link {
+    color: var(--terracotta);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  /* ==========================================================
+     NAVIGATION
+  ========================================================== */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-block: 1rem;
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-shrink: 0;
+    color: var(--dark);
+  }
+
+  .nav-logo-icon {
+    width: 42px;
+    height: 32px;
+    color: var(--dark);
+  }
+
+  .nav-logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+  }
+
+  .nav-logo-name {
+    font-family: var(--font-sans);
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--dark);
+  }
+
+  .nav-logo-sub {
+    font-family: var(--font-sans);
+    font-size: 0.6rem;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-left: auto;
+  }
+
+  .nav-links a {
+    font-size: 0.825rem;
+    font-weight: 400;
+    color: var(--text);
+    white-space: nowrap;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover {
+    color: var(--terracotta);
+  }
+
+  .nav-cta {
+    flex-shrink: 0;
+    font-size: 0.65rem;
+    padding: 0.65rem 1.25rem;
+  }
+
+  .nav-burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 4px;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .nav-burger span {
+    display: block;
+    width: 22px;
+    height: 1.5px;
+    background: var(--dark);
+    border-radius: 2px;
+  }
+
+  /* ==========================================================
+     HERO
+  ========================================================== */
+  .hero {
+    display: flex;
+    align-items: stretch;
+    background: var(--cream);
+    min-height: 580px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .hero-content {
+    flex: 0 0 48%;
+    padding: 6rem var(--px) 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-heading {
+    font-family: var(--font-serif);
+    font-size: clamp(2.6rem, 5vw, 4rem);
+    font-weight: 500;
+    line-height: 1.12;
+    color: var(--dark);
+    margin-bottom: 0;
+  }
+
+  .hero-body {
+    font-size: 0.9rem;
+    line-height: 1.75;
+    color: var(--text);
+    max-width: 360px;
+    margin-bottom: 2.25rem;
+  }
+
+  .hero-btn {
+    align-self: flex-start;
+  }
+
+  .hero-image-wrap {
+    flex: 0 0 58%;
+    position: relative;
+    margin-left: -6%;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .hero-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, var(--cream) 0%, transparent 38%);
+    pointer-events: none;
+  }
+
+  /* ==========================================================
+     PILLARS
+  ========================================================== */
+  .pillars {
+    background: var(--cream);
+    border-top: 1px solid var(--border);
+    padding-block: 4.5rem;
+  }
+
+  .pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+
+  .pillar {
+    padding: 2rem 2.5rem;
+    border-right: 1px solid var(--border);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .pillar:last-child {
+    border-right: none;
+  }
+
+  .pillar-icon-wrap {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark);
+    flex-shrink: 0;
+  }
+
+  .pillar-icon-wrap svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .pillar-title {
+    font-family: var(--font-sans);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--dark);
+  }
+
+  .pillar-body {
+    font-size: 0.825rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  /* ==========================================================
+     WHY IT MATTERS
+  ========================================================== */
+  .why {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 560px;
+    background: var(--cream);
+  }
+
+  .why-image-wrap {
+    overflow: hidden;
+  }
+
+  .why-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .why-content {
+    padding: 5rem clamp(2rem, 5vw, 5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #F7F2E7;
+  }
+
+  .why-heading {
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-weight: 500;
+    line-height: 1.18;
+    color: var(--dark);
+    margin-bottom: 0;
+  }
+
+  .why-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .why-body p {
+    font-size: 0.875rem;
+    line-height: 1.8;
+    color: var(--text);
+  }
+
+  .bold-statement {
+    font-weight: 600 !important;
+  }
+
+  /* ==========================================================
+     FOUNDING CTA
+  ========================================================== */
+  .founding {
+    background: var(--cream);
+    padding-block: 5.5rem;
+    border-top: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: var(--max-w);
+    margin-inline: auto;
+    padding-inline: var(--px);
+  }
+
+  .founding-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    text-align: center;
+    color: var(--dark);
+  }
+
+  .founding-side-icon {
+    width: 72px;
+    height: 72px;
+    color: var(--dark);
+    opacity: 0.7;
+  }
+
+  .founding-side-text {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.45;
+    color: var(--text-muted);
+    max-width: 180px;
+    text-align: center;
+    font-style: italic;
+  }
+
+  .founding-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+  }
+
+  .founding-heading {
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    font-weight: 500;
+    color: var(--dark);
+    margin-bottom: 0;
+  }
+
+  .founding-body {
+    font-size: 0.875rem;
+    line-height: 1.8;
+    color: var(--text);
+    max-width: 520px;
+    margin-bottom: 2rem;
+  }
+
+  .founding-btn {
+    margin-bottom: 1.25rem;
+    font-size: 0.65rem;
+  }
+
+  .founding-link {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--dark);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .founding-link:hover {
+    color: var(--terracotta);
+  }
+
+  /* ==========================================================
+     FOOTER
+  ========================================================== */
+  .footer {
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    padding-top: 4rem;
+  }
+
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 4rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    align-items: start;
+  }
+
+  .footer-label {
+    font-family: var(--font-sans);
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 1.75rem;
+  }
+
+  .footer-values-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2rem;
+  }
+
+  .footer-value-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    min-width: 60px;
+  }
+
+  .footer-value-item svg {
+    width: 36px;
+    height: 36px;
+    color: var(--footer-text);
+    opacity: 0.75;
+  }
+
+  .footer-value-item span {
+    font-size: 0.65rem;
+    letter-spacing: 0.04em;
+    color: var(--footer-text);
+    opacity: 0.8;
+    text-align: center;
+    max-width: 80px;
+    line-height: 1.4;
+  }
+
+  .footer-location-text {
+    font-size: 0.8rem;
+    line-height: 1.85;
+    color: var(--footer-text);
+    opacity: 0.75;
+    margin-bottom: 1rem;
+  }
+
+  .footer-location-link {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--footer-text);
+    opacity: 0.9;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(200,195,174,0.35);
+    padding-bottom: 1px;
+    transition: opacity 0.2s;
+  }
+
+  .footer-location-link:hover {
+    opacity: 1;
+  }
+
+  .footer-leaf {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  .footer-leaf svg {
+    width: 100px;
+    height: 140px;
+    color: rgba(200,195,174,0.25);
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1.25rem;
+    gap: 2rem;
+  }
+
+  .footer-copy {
+    font-size: 0.7rem;
+    color: rgba(200,195,174,0.5);
+  }
+
+  .footer-nav {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .footer-nav a {
+    font-size: 0.7rem;
+    color: rgba(200,195,174,0.6);
+    transition: color 0.2s;
+  }
+
+  .footer-nav a:hover {
+    color: var(--footer-text);
+  }
+
+  /* ==========================================================
+     RESPONSIVE
+  ========================================================== */
+  @media (max-width: 1024px) {
+    .pillars-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pillar:nth-child(2) {
+      border-right: none;
+    }
+
+    .pillar:nth-child(1),
+    .pillar:nth-child(2) {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .founding {
+      grid-template-columns: 1fr;
+    }
+
+    .founding-side {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .nav-links,
+    .nav-cta {
+      display: none;
+    }
+
+    .nav-burger {
+      display: flex;
+    }
+
+    .hero {
+      flex-direction: column;
+      min-height: unset;
+    }
+
+    .hero-content {
+      flex: unset;
+      padding: 3rem 1.5rem 2.5rem;
+    }
+
+    .hero-image-wrap {
+      flex: unset;
+      margin-left: 0;
+      height: 280px;
+    }
+
+    .hero-img-overlay {
+      background: linear-gradient(to bottom, var(--cream) 0%, transparent 25%);
+    }
+
+    .why {
+      grid-template-columns: 1fr;
+    }
+
+    .why-image-wrap {
+      height: 300px;
+    }
+
+    .footer-inner {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    .footer-leaf {
+      display: none;
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+      gap: 0.75rem;
+    }
+
+    .pillars-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .pillar {
+      border-right: none;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .pillar:last-child {
+      border-bottom: none;
+    }
+  }
+</style>
