@@ -1,8 +1,7 @@
 ---
 import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
 import Layout from '../layouts/Layout.astro';
-import { Image } from 'astro:assets';
-import sibundoyImage from '../assets/sibundoy.png';
 import '../styles/home.css';
 ---
 
@@ -11,39 +10,7 @@ import '../styles/home.css';
   <Header />
 
   <main>
-
-    <!-- ============================================================
-         HERO
-    ============================================================ -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1 class="hero-heading">
-          Building a bridge<br />
-          between Europe and<br />
-          the <span class="accent">Kamëntsá</span> people
-        </h1>
-        <div class="divider">
-          <span class="divider-diamond"></span>
-        </div>
-        <p class="hero-body">
-          We are creating a European NGO to support
-          the living traditions, territorial rights, and
-          self-determined projects of the Kamëntsá
-          people in the <a href="/valley" class="inline-link">Sibundoy Valley</a>, Colombia.
-        </p>
-        <a href="/mission" class="btn btn-dark hero-btn">Our Mission</a>
-      </div>
-
-      <div class="hero-image-wrap">
-        <Image
-          src={sibundoyImage}
-          alt="Aerial view of the Sibundoy Valley, Colombia, with green mountains and clouds"
-          class="hero-img"
-          loading="eager"
-        />
-        <div class="hero-img-overlay" aria-hidden="true"></div>
-      </div>
-    </section>
+    <Hero />
 
     <!-- ============================================================
          PILLARS / VALUES
