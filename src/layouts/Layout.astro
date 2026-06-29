@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 interface Props {
   title: string;
   description?: string;
@@ -25,88 +27,3 @@ const { title, description = "We are creating a European NGO to support the livi
     <slot />
   </body>
 </html>
-
-<style is:global>
-  *, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  :root {
-    --cream: #F3EDE0;
-    --cream-light: #FAF8F3;
-    --terracotta: #C4622D;
-    --dark: #1C2010;
-    --text: #2A2818;
-    --text-muted: #5A5644;
-    --footer-bg: #252D16;
-    --footer-text: #C8C3AE;
-    --border: rgba(44, 40, 24, 0.12);
-
-    --font-serif: 'Cormorant Garamond', Georgia, serif;
-    --font-sans: 'Inter', system-ui, sans-serif;
-
-    --max-w: 1200px;
-    --px: clamp(1.5rem, 4vw, 5rem);
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-    font-family: var(--font-sans);
-    color: var(--text);
-    background: var(--cream);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  img {
-    display: block;
-    max-width: 100%;
-  }
-
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  button {
-    cursor: pointer;
-    border: none;
-    background: none;
-    font: inherit;
-  }
-
-  .divider {
-    display: flex;
-    align-items: center;
-    margin: 1.25rem 0;
-    color: var(--terracotta);
-  }
-
-  .divider::before,
-  .divider::after {
-    content: '';
-    display: block;
-    width: 2.5rem;
-    height: 1px;
-    background: currentColor;
-  }
-
-  .divider-diamond {
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    background: currentColor;
-    transform: rotate(45deg);
-    margin: 0 8px;
-    flex-shrink: 0;
-  }
-
-  .divider.centered {
-    justify-content: center;
-  }
-</style>
