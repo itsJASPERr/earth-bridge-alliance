@@ -1,4 +1,5 @@
 ---
+import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import sibundoyImage from '../assets/sibundoy.png';
@@ -7,55 +8,7 @@ import '../styles/home.css';
 
 <Layout title="The Living Bridge Foundation">
 
-  <!-- ============================================================
-       NAVIGATION
-  ============================================================ -->
-  <header class="site-header">
-    <nav class="nav container">
-      <a href="/" class="nav-logo" aria-label="The Living Bridge Foundation">
-        <!-- Bridge icon -->
-        <svg class="nav-logo-icon" viewBox="0 0 48 36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <!-- deck -->
-          <line x1="2" y1="28" x2="46" y2="28" />
-          <!-- left tower -->
-          <line x1="12" y1="28" x2="12" y2="8" />
-          <!-- right tower -->
-          <line x1="36" y1="28" x2="36" y2="8" />
-          <!-- tower caps -->
-          <line x1="9" y1="8" x2="15" y2="8" />
-          <line x1="33" y1="8" x2="39" y2="8" />
-          <!-- left cable from top-left to tower apex -->
-          <path d="M2 28 Q12 14 12 8" />
-          <!-- right cable -->
-          <path d="M46 28 Q36 14 36 8" />
-          <!-- center catenary cables -->
-          <path d="M12 8 Q24 18 36 8" />
-          <!-- vertical hangers -->
-          <line x1="18" y1="27" x2="17" y2="14" />
-          <line x1="24" y1="28" x2="24" y2="13" />
-          <line x1="30" y1="27" x2="31" y2="14" />
-        </svg>
-        <div class="nav-logo-text">
-          <span class="nav-logo-name">THE LIVING BRIDGE</span>
-          <span class="nav-logo-sub">FOUNDATION</span>
-        </div>
-      </a>
-
-      <ul class="nav-links" role="list">
-        <li><a href="/about">About Us</a></li>
-        <li><a href="/mission">Our Mission</a></li>
-        <li><a href="/why">Why It Matters</a></li>
-        <li><a href="/involved">Get Involved</a></li>
-        <li><a href="/updates">Updates</a></li>
-      </ul>
-
-      <a href="/join" class="btn btn-dark nav-cta">Become a Founding Member</a>
-
-      <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-  </header>
+  <Header />
 
   <main>
 
