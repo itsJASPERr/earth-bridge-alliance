@@ -1,0 +1,139 @@
+.footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  padding-top: 4rem;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 4rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  align-items: start;
+}
+
+.footer-label {
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 1.75rem;
+}
+
+.footer-values-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2rem;
+}
+
+.footer-value-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  min-width: 60px;
+}
+
+.footer-value-item svg {
+  width: 36px;
+  height: 36px;
+  color: var(--footer-text);
+  opacity: 0.75;
+}
+
+.footer-value-item span {
+  font-size: 0.65rem;
+  letter-spacing: 0.04em;
+  color: var(--footer-text);
+  opacity: 0.8;
+  text-align: center;
+  max-width: 80px;
+  line-height: 1.4;
+}
+
+.footer-location-text {
+  font-size: 0.8rem;
+  line-height: 1.85;
+  color: var(--footer-text);
+  opacity: 0.75;
+  margin-bottom: 1rem;
+}
+
+.footer-location-link {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--footer-text);
+  opacity: 0.9;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(200,195,174,0.35);
+  padding-bottom: 1px;
+  transition: opacity 0.2s;
+}
+
+.footer-location-link:hover {
+  opacity: 1;
+}
+
+.footer-leaf {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.footer-leaf svg {
+  width: 100px;
+  height: 140px;
+  color: rgba(200,195,174,0.25);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1.25rem;
+  gap: 2rem;
+}
+
+.footer-copy {
+  font-size: 0.7rem;
+  color: rgba(200,195,174,0.5);
+}
+
+.footer-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-nav a {
+  font-size: 0.7rem;
+  color: rgba(200,195,174,0.6);
+  transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+  color: var(--footer-text);
+}
+
+@media (max-width: 768px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-leaf {
+    display: none;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+}
