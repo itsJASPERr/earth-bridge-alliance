@@ -1,0 +1,12 @@
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}

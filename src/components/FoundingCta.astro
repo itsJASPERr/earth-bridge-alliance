@@ -1,4 +1,6 @@
 ---
+import SectionLabel from './SectionLabel.astro';
+import Divider from './Divider.astro';
 import '../styles/founding-cta.css';
 ---
 
@@ -20,11 +22,9 @@ import '../styles/founding-cta.css';
   </div>
 
   <div class="founding-main">
-    <p class="section-label">The Next Step</p>
+    <SectionLabel label="The Next Step" />
     <h2 class="founding-heading">Help us found this bridge</h2>
-    <div class="divider centered">
-      <span class="divider-diamond"></span>
-    </div>
+    <Divider centered />
     <p class="founding-body">
       We are currently establishing the legal foundation of the NGO in Europe.
       We are inviting a small group of committed individuals to become founding members

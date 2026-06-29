@@ -28,16 +28,6 @@
   color: #fff;
 }
 
-.section-label {
-  font-family: var(--font-sans);
-  font-size: 0.65rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--terracotta);
-  margin-bottom: 0.75rem;
-}
-
 .accent {
   color: var(--terracotta);
 }

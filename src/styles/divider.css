@@ -1,0 +1,29 @@
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 1.25rem 0;
+  color: var(--terracotta);
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  display: block;
+  width: 2.5rem;
+  height: 1px;
+  background: currentColor;
+}
+
+.divider-diamond {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: currentColor;
+  transform: rotate(45deg);
+  margin: 0 8px;
+  flex-shrink: 0;
+}
+
+.divider--centered {
+  justify-content: center;
+}

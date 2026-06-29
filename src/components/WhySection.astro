@@ -1,4 +1,6 @@
 ---
+import SectionLabel from './SectionLabel.astro';
+import Divider from './Divider.astro';
 import '../styles/why.css';
 ---
 
@@ -16,14 +18,12 @@ import '../styles/why.css';
   </div>
 
   <div class="why-content">
-    <p class="section-label">Why It Matters</p>
+    <SectionLabel label="Why It Matters" />
     <h2 class="why-heading">
       A remarkable culture.<br />
       Still largely <span class="accent">unheard.</span>
     </h2>
-    <div class="divider">
-      <span class="divider-diamond"></span>
-    </div>
+    <Divider />
     <div class="why-body">
       <p>The Kamëntsá people of the Sibundoy Valley carry one of the richest living traditions in the Andes and Amazon.</p>
       <p>Yet outside Colombia, their voice remains largely unheard.</p>

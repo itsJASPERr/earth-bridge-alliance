@@ -1,0 +1,14 @@
+---
+import '../styles/divider.css';
+
+const { centered = false } = Astro.props;
+const classes = ['divider'];
+
+if (centered) {
+  classes.push('divider--centered');
+}
+---
+
+<div class={classes.join(' ')} aria-hidden="true">
+  <span class="divider-diamond"></span>
+</div>

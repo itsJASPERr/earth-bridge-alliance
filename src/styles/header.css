@@ -51,25 +51,6 @@
   color: var(--text-muted);
 }
 
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-  margin-left: auto;
-}
-
-.nav-links a {
-  font-size: 0.825rem;
-  font-weight: 400;
-  color: var(--text);
-  white-space: nowrap;
-  transition: color 0.2s;
-}
-
-.nav-links a:hover {
-  color: var(--terracotta);
-}
-
 .nav-cta {
   flex-shrink: 0;
   font-size: 0.65rem;
@@ -94,7 +75,6 @@
 }
 
 @media (max-width: 768px) {
-  .nav-links,
   .nav-cta {
     display: none;
   }

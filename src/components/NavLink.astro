@@ -1,0 +1,10 @@
+---
+import '../styles/nav-link.css';
+
+const { href, target, label } = Astro.props;
+const linkHref = href ?? target ?? '#';
+---
+
+<li class="nav-link-item">
+  <a href={linkHref} class="nav-link">{label}</a>
+</li>

@@ -1,5 +1,6 @@
 ---
 import '../styles/header.css';
+import NavLinks from './NavLinks.astro';
 ---
 
 <header class="site-header">
@@ -33,13 +34,7 @@ import '../styles/header.css';
       </div>
     </a>
 
-    <ul class="nav-links" role="list">
-      <li><a href="/about">About Us</a></li>
-      <li><a href="/mission">Our Mission</a></li>
-      <li><a href="/why">Why It Matters</a></li>
-      <li><a href="/involved">Get Involved</a></li>
-      <li><a href="/updates">Updates</a></li>
-    </ul>
+    <NavLinks />
 
     <a href="/join" class="btn btn-dark nav-cta">Become a Founding Member</a>
 
